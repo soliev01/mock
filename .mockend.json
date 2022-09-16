@@ -1,7 +1,8 @@
-
 {
   "User": {
-    "id":{"string":{}}
-  },
-  "Post": {},
+    "id": { "string": {} },
+    "company": {
+      "string": {}
+    }
+  }
 }
