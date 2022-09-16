@@ -1,46 +1,59 @@
 {
-    
     "User": {
-      "id": { "string": {} },
-    "email": {"regexp":"^[a-z0-9]{5,15}@g(oogle)?mail\\.com$"},
-      "notifications": {
-        "hasMany": "Notification"
-      }
+        "id": {
+            "string": {}
+        },
+        "email": {
+            "regexp": "^[a-z0-9]{5,20}@g(oogle)?mail\\.com$"
+        },
+        "notifications": {
+            "hasMany": "Notification"
+        }
     },
     "Notification": {
-      "category": { "string": [
-        "peak",
-        "mean",
-        "trip",
-        "level"
-      ] },
-      "class": { "string": [
-        "fault",
-        "warning",
-        "abnormal"
-      ] },
-      "alertDate": {
-        "dateTime": {
-        "min": "2019-01-01T00:00:00Z",
-        "max": "2022-09-14T23:59:59Z"
+        "alertCategory": {
+            "string": [
+                "peak",
+                "mean",
+                "trip",
+                "level"
+            ]
+        },
+        "alertClass": {
+            "string": [
+                "fault",
+                "warning",
+                "abnormal"
+            ]
+        },
+        "alertDate": {
+            "dateTime": {
+                "min": "2019-01-01T00:00:00Z",
+                "max": "2022-09-14T23:59:59Z"
+            }
+        },
+        "deviceName": {
+            "string": [
+                "AirCon1",
+                "AirCon2",
+                "AirCon3",
+                "Elevator",
+                "1"
+            ]
+        },
+        "ack": {
+            "boolean": {}
+        },
+        "location": {
+            "string": [
+                "ITSROOM/7Floor/Office",
+                "ITSROOM/7Floor/Demokit",
+                "ITSROOM/8Floor/Office",
+                "ITSROOM/9Floor/Controlroom"
+            ]
+        },
+        "user": {
+            "belongsTo": "User"
         }
-      },
-      "device": { "string": [
-        "AirCon1",
-        "AirCon2",
-        "AirCon3",
-        "Elevator",
-        "1"
-      ] },
-      
-      "location": { "string" :[
-        "ITSROOM/7Floor/Office",
-        "ITSROOM/7Floor/Demokit",
-        "ITSROOM/8Floor/Office",
-        "ITSROOM/9Floor/Controlroom"
-      ]},
-      "user": {
-        "belongsTo": "User"
-      }
     }
-  }
+}
