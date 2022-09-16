@@ -1,8 +1,19 @@
 {
-  "User": {
-    "id": { "string": {} },
-    "company": {
-      "string": {}
+    "User": {
+      "id": { "string": {} },
+      "notifications": {
+        "hasMany": "Notification"
+      }
+    },
+    "Notification": {
+      "body": { "string": {} },
+      "location": { "string" :[
+        "ITSROOM/7Floor/Office",
+        "ITSROOM/8Floor/Office",
+        "ITSROOM/9Floor/Controlroom"
+      ]},
+      "user": {
+        "belongsTo": "User"
+      }
     }
   }
-}
