@@ -2,7 +2,7 @@
     
     "User": {
       "id": { "string": {} },
-    "email": {"regexp":"[a-z0-9]{5,20}@gmail.com$"},
+    "email": {"regexp":"[a-z0-9]{5,20}@gmail/.com$"},
       "notifications": {
         "hasMany": "Notification"
       }
