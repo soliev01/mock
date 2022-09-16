@@ -54,7 +54,7 @@
         },
         "comment": {
             "string":{}
-        }
+        },
         "user": {
             "belongsTo": "User"
         }
