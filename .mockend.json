@@ -52,6 +52,9 @@
                 "ITSROOM/9Floor/Controlroom"
             ]
         },
+        "comment": {
+            "string":{}
+        }
         "user": {
             "belongsTo": "User"
         }
