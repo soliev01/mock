@@ -21,9 +21,9 @@
         },
         "alertClass": {
             "string": [
-                "fault",
-                "warning",
-                "abnormal"
+                "Fault",
+                "Warning",
+                "Abnormal"
             ]
         },
         "alertDate": {
