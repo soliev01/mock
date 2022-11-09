@@ -39,7 +39,9 @@
                 "AirCon3",
                 "AirCon4",
                 "Device1",
-                "Device2"
+                "Device2",
+                "Device3",
+                "Device4"
             ]
         },
         "ack": {
