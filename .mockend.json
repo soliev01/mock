@@ -37,8 +37,8 @@
                 "AirCon1",
                 "AirCon2",
                 "AirCon3",
-                "Elevator",
-                "1"
+                "AirCon4",
+                "Device1"
             ]
         },
         "ack": {
@@ -47,7 +47,7 @@
         "location": {
             "string": [
                 "ITSROOM/7Floor/Office",
-                "ITSROOM/7Floor/Demokit",
+                "ITSROOM/7Floor/Hall",
                 "ITSROOM/8Floor/Office",
                 "ITSROOM/9Floor/Controlroom"
             ]
